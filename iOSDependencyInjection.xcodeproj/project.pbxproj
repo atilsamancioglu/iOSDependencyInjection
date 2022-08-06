@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3134F382277E25BC1A4EAA8B /* Pods_iOSDependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCB937BFAAA55698AFCAB67 /* Pods_iOSDependencyInjection.framework */; };
 		FCDBDB44289E954F006BA9A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBDB43289E954F006BA9A3 /* AppDelegate.swift */; };
 		FCDBDB46289E954F006BA9A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBDB45289E954F006BA9A3 /* SceneDelegate.swift */; };
 		FCDBDB48289E954F006BA9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBDB47289E954F006BA9A3 /* ViewController.swift */; };
 		FCDBDB4B289E954F006BA9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCDBDB49289E954F006BA9A3 /* Main.storyboard */; };
 		FCDBDB4D289E9552006BA9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCDBDB4C289E9552006BA9A3 /* Assets.xcassets */; };
 		FCDBDB50289E9552006BA9A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCDBDB4E289E9552006BA9A3 /* LaunchScreen.storyboard */; };
+		FCDBDB58289E99E9006BA9A3 /* AnotherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBDB57289E99E9006BA9A3 /* AnotherVC.swift */; };
+		FCDBDB5A289E9A22006BA9A3 /* BackgroundProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBDB59289E9A22006BA9A3 /* BackgroundProviderProtocol.swift */; };
+		FCDBDB5C289E9A4A006BA9A3 /* BackgroundProvidingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDBDB5B289E9A4A006BA9A3 /* BackgroundProvidingClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92EB18D8CE8BC33DB48A9C3F /* Pods-iOSDependencyInjection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDependencyInjection.debug.xcconfig"; path = "Target Support Files/Pods-iOSDependencyInjection/Pods-iOSDependencyInjection.debug.xcconfig"; sourceTree = "<group>"; };
+		AD93D96F41D3160538E6A6DE /* Pods-iOSDependencyInjection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDependencyInjection.release.xcconfig"; path = "Target Support Files/Pods-iOSDependencyInjection/Pods-iOSDependencyInjection.release.xcconfig"; sourceTree = "<group>"; };
+		DBCB937BFAAA55698AFCAB67 /* Pods_iOSDependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCDBDB40289E954F006BA9A3 /* iOSDependencyInjection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDependencyInjection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCDBDB43289E954F006BA9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCDBDB45289E954F006BA9A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		FCDBDB4C289E9552006BA9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCDBDB4F289E9552006BA9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCDBDB51289E9552006BA9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCDBDB57289E99E9006BA9A3 /* AnotherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherVC.swift; sourceTree = "<group>"; };
+		FCDBDB59289E9A22006BA9A3 /* BackgroundProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundProviderProtocol.swift; sourceTree = "<group>"; };
+		FCDBDB5B289E9A4A006BA9A3 /* BackgroundProvidingClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundProvidingClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3134F382277E25BC1A4EAA8B /* Pods_iOSDependencyInjection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		238C455DFA8DB399D33023C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBCB937BFAAA55698AFCAB67 /* Pods_iOSDependencyInjection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A09AEA9AC9E8BA69C4BE767B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92EB18D8CE8BC33DB48A9C3F /* Pods-iOSDependencyInjection.debug.xcconfig */,
+				AD93D96F41D3160538E6A6DE /* Pods-iOSDependencyInjection.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FCDBDB37289E954F006BA9A3 = {
 			isa = PBXGroup;
 			children = (
 				FCDBDB42289E954F006BA9A3 /* iOSDependencyInjection */,
 				FCDBDB41289E954F006BA9A3 /* Products */,
+				A09AEA9AC9E8BA69C4BE767B /* Pods */,
+				238C455DFA8DB399D33023C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +89,9 @@
 				FCDBDB43289E954F006BA9A3 /* AppDelegate.swift */,
 				FCDBDB45289E954F006BA9A3 /* SceneDelegate.swift */,
 				FCDBDB47289E954F006BA9A3 /* ViewController.swift */,
+				FCDBDB57289E99E9006BA9A3 /* AnotherVC.swift */,
+				FCDBDB59289E9A22006BA9A3 /* BackgroundProviderProtocol.swift */,
+				FCDBDB5B289E9A4A006BA9A3 /* BackgroundProvidingClass.swift */,
 				FCDBDB49289E954F006BA9A3 /* Main.storyboard */,
 				FCDBDB4C289E9552006BA9A3 /* Assets.xcassets */,
 				FCDBDB4E289E9552006BA9A3 /* LaunchScreen.storyboard */,
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCDBDB54289E9552006BA9A3 /* Build configuration list for PBXNativeTarget "iOSDependencyInjection" */;
 			buildPhases = (
+				EC79CB70DADCE438274C6B94 /* [CP] Check Pods Manifest.lock */,
 				FCDBDB3C289E954F006BA9A3 /* Sources */,
 				FCDBDB3D289E954F006BA9A3 /* Frameworks */,
 				FCDBDB3E289E954F006BA9A3 /* Resources */,
+				603483B8B11B8E3F9F9DB5A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +168,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		603483B8B11B8E3F9F9DB5A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSDependencyInjection/Pods-iOSDependencyInjection-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSDependencyInjection/Pods-iOSDependencyInjection-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSDependencyInjection/Pods-iOSDependencyInjection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC79CB70DADCE438274C6B94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSDependencyInjection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCDBDB3C289E954F006BA9A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCDBDB5A289E9A22006BA9A3 /* BackgroundProviderProtocol.swift in Sources */,
+				FCDBDB58289E99E9006BA9A3 /* AnotherVC.swift in Sources */,
 				FCDBDB48289E954F006BA9A3 /* ViewController.swift in Sources */,
+				FCDBDB5C289E9A4A006BA9A3 /* BackgroundProvidingClass.swift in Sources */,
 				FCDBDB44289E954F006BA9A3 /* AppDelegate.swift in Sources */,
 				FCDBDB46289E954F006BA9A3 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +362,7 @@
 		};
 		FCDBDB55289E9552006BA9A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92EB18D8CE8BC33DB48A9C3F /* Pods-iOSDependencyInjection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +391,7 @@
 		};
 		FCDBDB56289E9552006BA9A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD93D96F41D3160538E6A6DE /* Pods-iOSDependencyInjection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
